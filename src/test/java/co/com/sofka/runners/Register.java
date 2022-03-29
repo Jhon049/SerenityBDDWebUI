@@ -1,6 +1,5 @@
 package co.com.sofka.runners;
 
-
 import io.cucumber.junit.CucumberOptions;
 import net.serenitybdd.cucumber.CucumberWithSerenity;
 import org.junit.runner.RunWith;
@@ -10,7 +9,6 @@ import org.junit.runner.RunWith;
         snippets = CucumberOptions.SnippetType.CAMELCASE
         ,features = {"src/test/resources/features/register.feature"}
         ,glue = {"co.com.sofka.stepdefinitions"}
-        ,tags = ("@dos")
 )
 
 public class Register {

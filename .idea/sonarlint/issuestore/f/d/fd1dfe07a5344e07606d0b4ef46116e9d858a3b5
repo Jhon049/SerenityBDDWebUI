@@ -1,0 +1,10 @@
+
+m	java:S116"RRename this field "Country" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(š„’98–Ä §ý/
+r
+java:S1450"VRemove the "Country" field and declare it as a local variable in the relevant methods.(š„’98—Ä §ý/
+v
+java:S1450"TRemove the "state" field and declare it as a local variable in the relevant methods.(µîŠ©øÿÿÿÿ8«Ê­§ý/
+K
+java:S1068")Remove this unused "state" private field.(µîŠ©øÿÿÿÿ8ºÊ­§ý/
+G
+java:S1068"+Remove this unused "Country" private field.(š„’98«Ä §ý/

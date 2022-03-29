@@ -9,7 +9,6 @@ import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.Scroll;
 
 public class FillTheSignInForm implements Task {
-
     private String email;
     private String password;
 

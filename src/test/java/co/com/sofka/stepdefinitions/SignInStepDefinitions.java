@@ -5,9 +5,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.hamcrest.Matchers;
-
 import static co.com.sofka.question.createaccountform.CreateAccountSuccess.createAccountIsSuccess;
-import static co.com.sofka.question.createaccountform.CreateAccountUnsuccess.createAccountIsUnsuccessful;
 import static co.com.sofka.question.signin.SignInIsUnsuccessful.signInIsUnsuccessful;
 import static co.com.sofka.task.landingpage.GoToSignIn.goToSignIn;
 import static co.com.sofka.task.landingpage.OpenLandingPage.openLandingPage;

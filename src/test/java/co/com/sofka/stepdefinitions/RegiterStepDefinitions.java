@@ -5,7 +5,6 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.hamcrest.Matchers;
-
 import static co.com.sofka.question.createaccountform.CreateAccountSuccess.createAccountIsSuccess;
 import static co.com.sofka.question.createaccountform.CreateAccountUnsuccess.createAccountIsUnsuccessful;
 import static co.com.sofka.task.createaccountform.FillCreateAccountForm.fillCreateAccountForm;
@@ -18,7 +17,6 @@ import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 public class RegiterStepDefinitions extends Setup{
 
     private static final String ACTOR_NAME = "Jhon";
-
 
     @Given("me encuentro en el modulo sign in")
     public void meEncuentroEnElModuloSignIn (){
@@ -38,7 +36,6 @@ public class RegiterStepDefinitions extends Setup{
 
     @When ("diligencio el formulario de registro")
     public void diligencioElFormularioDeRegistro(){
-
         theActorInTheSpotlight().attemptsTo(
                 fillCreateAccountForm()
                        .withFirstName("sofka")
@@ -51,7 +48,6 @@ public class RegiterStepDefinitions extends Setup{
                         .withCountry("United States")
                         .withMobilePhone("31524815")
         );
-
     }
 
     @Then("se valida la creacion de la cuenta")
@@ -59,7 +55,6 @@ public class RegiterStepDefinitions extends Setup{
         theActorInTheSpotlight().should(
                 seeThat(createAccountIsSuccess(), Matchers.equalTo(true)));
     }
-
 
     @Given ("ingreso al modulo sign in")
     public void ingresoAlModuloSignIn (){
@@ -82,7 +77,4 @@ public class RegiterStepDefinitions extends Setup{
         theActorInTheSpotlight().should(
                 seeThat(createAccountIsUnsuccessful(), Matchers.equalTo(true)));
     }
-
-
-
 }

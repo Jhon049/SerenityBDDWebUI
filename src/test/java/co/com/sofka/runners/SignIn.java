@@ -9,8 +9,6 @@ import org.junit.runner.RunWith;
         snippets = CucumberOptions.SnippetType.CAMELCASE
         ,features = {"src/test/resources/features/signIn.feature"}
         ,glue = {"co.com.sofka.stepdefinitions"}
-        ,tags = ("@dos")
 )
-
 public class SignIn {
 }

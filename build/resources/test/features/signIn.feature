@@ -8,7 +8,6 @@ Feature: ingreso a cuenta
     When diligencio las credenciales
     Then ingreso al perfil del usuario
 
-    @dos
   Scenario: Ingreso fallido a cuenta de usuario
     Given ingreso a modulo
     When diligencio las credenciales incorrectas

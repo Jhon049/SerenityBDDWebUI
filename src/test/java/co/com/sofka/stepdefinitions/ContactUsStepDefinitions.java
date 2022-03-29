@@ -4,7 +4,6 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.hamcrest.Matchers;
-
 import static co.com.sofka.question.contactus.ContactUs.contactUs;
 import static co.com.sofka.question.contactus.ContactUsFailed.contactUsFailed;
 import static co.com.sofka.task.contactus.FillContactUs.fillContactUs;
@@ -28,7 +27,6 @@ public class ContactUsStepDefinitions extends Setup {
 
     @When("diligencio el formulario")
     public void diligencioElFormulario (){
-
         theActorInTheSpotlight().attemptsTo(
                 fillContactUs()
                         .usingEmail(ACTOR_NAME+(int)(random()*1000)+"@hotmail.com")
@@ -66,5 +64,4 @@ public class ContactUsStepDefinitions extends Setup {
         theActorInTheSpotlight().should(
                 seeThat(contactUsFailed(), Matchers.equalTo(true)));
     }
-
 }
