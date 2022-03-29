@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Registrar cuenta nueva" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-03-29T09:42:37" hostname="DESKTOP-90O2SEU" time="29.21">
+  <properties/>
+  <testcase name="Registro fallido" classname="Registrar cuenta nueva" time="29.21"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[mar 29, 2022 4:42:37 A. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 10518
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mar 29, 2022 4:42:43 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+]]></system-err>
+</testsuite>

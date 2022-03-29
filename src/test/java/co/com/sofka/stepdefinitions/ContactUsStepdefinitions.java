@@ -5,7 +5,10 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.hamcrest.Matchers;
 
+import javax.swing.*;
+
 import static co.com.sofka.question.contactus.ContactUs.contactUs;
+import static co.com.sofka.question.contactus.ContactUsFailed.contactUsFailed;
 import static co.com.sofka.task.contactus.FillContactUs.fillContactUs;
 import static co.com.sofka.task.landingpage.GoToContactUs.goToContactUs;
 import static co.com.sofka.task.landingpage.OpenLandingPage.openLandingPage;
@@ -40,6 +43,30 @@ public class ContactUsStepdefinitions extends Setup {
     public void seConfirmaElEnvio(){
         theActorInTheSpotlight().should(
                 seeThat(contactUs(), Matchers.equalTo(true)));
+    }
+
+    @Given ("ingreso al modulo de contact us")
+    public void ingresoAlModuloDeContactUs (){
+        actorSetupTheBrowser(ACTOR_NAME);
+        theActorInTheSpotlight().wasAbleTo(
+                openLandingPage(),
+                goToContactUs());
+    }
+
+    @When("diligencio el formulario sin correo")
+    public void diligencioElFormularioSinCorreo (){
+        theActorInTheSpotlight().attemptsTo(
+                fillContactUs()
+                        .choosingSubject()
+                        .usingEmail("")
+                        .AndWithTheMessage("Enviando prueba")
+        );
+    }
+
+    @Then("se valida el error por el correo")
+    public void seValidaElErrorPorElCorreo (){
+        theActorInTheSpotlight().should(
+                seeThat(contactUsFailed(), Matchers.equalTo(true)));
     }
 
 }

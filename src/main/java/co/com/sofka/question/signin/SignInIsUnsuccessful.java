@@ -8,7 +8,7 @@ import net.serenitybdd.screenplay.Question;
 public class SignInIsUnsuccessful implements Question<String> {
     @Override
     public String answeredBy(Actor actor) {
-        return SignInPage.SIGN_IN_ERROR_MESSAGE_VALIDATION.resolveFor(actor).getText().trim();
+        return SignInPage.CREATE_ACCOUNT_ERROR_MESSAGE_VALIDATION.resolveFor(actor).getText().trim();
     }
 
     public static SignInIsUnsuccessful signInIsUnsuccessful() {

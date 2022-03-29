@@ -2,6 +2,7 @@ package co.com.sofka.task.signinpage;
 
 import co.com.sofka.userinterface.signinpage.SignInPage;
 import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Clear;
 import net.serenitybdd.screenplay.actions.Click;

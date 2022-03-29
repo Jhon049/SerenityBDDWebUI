@@ -8,3 +8,7 @@ Feature: Contacto a soporte
     When diligencio el formulario
     Then se confirma el envio
 
+  Scenario: Contacto fallido con servicio al cliente
+    Given ingreso al modulo de contact us
+    When diligencio el formulario sin correo
+    Then se valida el error por el correo

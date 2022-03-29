@@ -6,6 +6,10 @@ import org.openqa.selenium.By;
 
 public class CreateAccountFormPage extends PageObject {
 
+    public static final Target CREATEANACCOUNT = Target
+            .the("CreateAnAccount")
+            .located(By.id("SubmitCreate"));
+
     public static final Target FIRST_NAME = Target
             .the("First Name")
             .located(By.id("customer_firstname"));
@@ -34,6 +38,11 @@ public class CreateAccountFormPage extends PageObject {
             .the("Zip code")
             .located(By.id("postcode"));
 
+    public static final Target COUNTRY = Target
+            .the("Country")
+            .located(By.id("id_country"));
+
+
     public static final Target  MOBILE_PHONE= Target
             .the("Mobile phone")
             .located(By.id("phone_mobile"));
@@ -50,5 +59,8 @@ public class CreateAccountFormPage extends PageObject {
     public static final Target  ACCOUNT_LINK= Target
             .the("Account link")
             .located(By.cssSelector(".page-heading"));
+
+
+
 
 }

@@ -14,6 +14,7 @@ public class FillCreateAccountForm implements Task {
     private String city;
     private String state;
     private String zipCode;
+    private String Country;
     private String mobilePhone;
 
     @Override
@@ -47,12 +48,17 @@ public class FillCreateAccountForm implements Task {
 
                 Scroll.to(CreateAccountFormPage.STATE),
                 Click.on(CreateAccountFormPage.STATE),
-                SelectFromOptions.byVisibleText(state).from(CreateAccountFormPage.STATE),
+                SelectFromOptions.byVisibleText("Alabama").from(CreateAccountFormPage.STATE),
+
 
                 Scroll.to(CreateAccountFormPage.ZIP_CODE),
                 Click.on(CreateAccountFormPage.ZIP_CODE),
                 Clear.field(CreateAccountFormPage.ZIP_CODE),
                 Enter.theValue(zipCode).into(CreateAccountFormPage.ZIP_CODE),
+
+                Scroll.to(CreateAccountFormPage.COUNTRY),
+                Click.on(CreateAccountFormPage.COUNTRY),
+                SelectFromOptions.byVisibleText("United States").from(CreateAccountFormPage.COUNTRY),
 
                 Scroll.to(CreateAccountFormPage.MOBILE_PHONE),
                 Click.on(CreateAccountFormPage.MOBILE_PHONE),
@@ -102,8 +108,12 @@ public class FillCreateAccountForm implements Task {
         this.zipCode = zipCode;
         return this;
     }
+    public FillCreateAccountForm withCountry(String country) {
+        this.Country = country;
+        return this;
+    }
 
-    public FillCreateAccountForm andWithMobilePhone(String mobilePhone) {
+    public FillCreateAccountForm withMobilePhone(String mobilePhone) {
         this.mobilePhone = mobilePhone;
         return this;
     }
@@ -111,4 +121,5 @@ public class FillCreateAccountForm implements Task {
     public static FillCreateAccountForm fillCreateAccountForm() {
         return new FillCreateAccountForm();
     }
+
 }
