@@ -5,8 +5,6 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.hamcrest.Matchers;
 
-import javax.swing.*;
-
 import static co.com.sofka.question.contactus.ContactUs.contactUs;
 import static co.com.sofka.question.contactus.ContactUsFailed.contactUsFailed;
 import static co.com.sofka.task.contactus.FillContactUs.fillContactUs;
@@ -16,7 +14,7 @@ import static java.lang.Math.random;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
-public class ContactUsStepdefinitions extends Setup {
+public class ContactUsStepDefinitions extends Setup {
 
     private static final String ACTOR_NAME = "Jhon";
 

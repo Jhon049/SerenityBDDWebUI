@@ -5,10 +5,10 @@ import co.com.sofka.userinterface.signinpage.SignInPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 
-public class SignInIsUnsuccessful implements Question<String> {
+public class SignInIsUnsuccessful implements Question<Boolean> {
     @Override
-    public String answeredBy(Actor actor) {
-        return SignInPage.CREATE_ACCOUNT_ERROR_MESSAGE_VALIDATION.resolveFor(actor).getText().trim();
+    public Boolean answeredBy(Actor actor) {
+        return SignInPage.SIGNIN_ERROR_MESSAGE.resolveFor(actor).getText().trim().equalsIgnoreCase("There is 1 error");
     }
 
     public static SignInIsUnsuccessful signInIsUnsuccessful() {

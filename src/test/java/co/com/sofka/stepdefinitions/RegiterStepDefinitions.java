@@ -1,27 +1,21 @@
 package co.com.sofka.stepdefinitions;
 
-import co.com.sofka.question.createaccountform.CreateAccountSuccess;
-import co.com.sofka.task.createaccountform.*;
 import co.com.sofka.task.signinpage.GoToCreateAccountForm;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.hamcrest.Matchers;
 
-import javax.swing.*;
-
 import static co.com.sofka.question.createaccountform.CreateAccountSuccess.createAccountIsSuccess;
 import static co.com.sofka.question.createaccountform.CreateAccountUnsuccess.createAccountIsUnsuccessful;
-import static co.com.sofka.task.contactus.FillContactUs.fillContactUs;
 import static co.com.sofka.task.createaccountform.FillCreateAccountForm.fillCreateAccountForm;
-import static co.com.sofka.task.landingpage.GoToContactUs.goToContactUs;
 import static co.com.sofka.task.landingpage.GoToSignIn.goToSignIn;
 import static co.com.sofka.task.landingpage.OpenLandingPage.openLandingPage;
 import static java.lang.Math.random;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
-public class regiterStepDefinitions extends Setup{
+public class RegiterStepDefinitions extends Setup{
 
     private static final String ACTOR_NAME = "Jhon";
 
@@ -86,7 +80,6 @@ public class regiterStepDefinitions extends Setup{
     @Then ("se valida el error generado")
     public void seValidaElErrorGenerado (){
         theActorInTheSpotlight().should(
-
                 seeThat(createAccountIsUnsuccessful(), Matchers.equalTo(true)));
     }
 

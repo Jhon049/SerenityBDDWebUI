@@ -6,7 +6,6 @@ import org.openqa.selenium.By;
 
 public class SignInPage extends PageObject {
 
-    //for create account scenarios
     public static final Target EMAIL_CREATE_FIELD = Target
             .the("Email create field")
             .located(By.id("email_create"));
@@ -15,7 +14,6 @@ public class SignInPage extends PageObject {
             .the("Create an account button")
             .located(By.id("SubmitCreate"));
 
-    //for sign in scenarios
     public static final Target EMAIL_SIGNIN_FIELD = Target
             .the("Email Sign in field")
             .located(By.id("email"));
@@ -30,7 +28,7 @@ public class SignInPage extends PageObject {
             .the("Create account Error message")
             .located(By.id("create_account_error"));
 
-
-
-
+    public static final Target SIGNIN_ERROR_MESSAGE = Target
+            .the("Sign In Error message")
+            .located(By.xpath("//*[@id=\"center_column\"]/div[1]/p"));
 }
