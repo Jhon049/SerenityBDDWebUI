@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Contacto a soporte" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-03-29T04:27:32" hostname="DESKTOP-90O2SEU" time="30.241">
+  <properties/>
+  <testcase name="Contacto con servicio al cliente" classname="Contacto a soporte" time="30.241"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[mar 28, 2022 11:27:32 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 30563
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mar 28, 2022 11:27:36 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+]]></system-err>
+</testsuite>
